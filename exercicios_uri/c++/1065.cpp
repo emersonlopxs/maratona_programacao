@@ -12,3 +12,4 @@ int main(void)
     
     cout << pares << " valores pares\n";
 }
+  

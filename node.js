@@ -1,23 +1,31 @@
-const lines = [80];
+// const lines = [[12, 1, 5.30], [16, 2, 5.10]];
 
-// console.log(`MEDIA = ${media.toFixed(5)}`)
+const lines = ["vertebrado", "ave", "onivoro"]
 
-cities = {
-  "61": "Brasilia",
-  "71": "Salvador",
-  "11": "Sao Paulo",
-  "21": "Rio de Janeiro",
-  "32": "Juiz de Fora",
-  "19": "Campinas",
-  "27": "Vitoria",
-  "31": "Belo Horizonte"
+const animal = {
+  vertebrado: {
+    ave: {
+      carnivoro: "aguia",
+      onivoro: "pomba"
+    },
+    mamifero: {
+      onivoro: "homem",
+      herbivoro: "vaca"
+    }
+  },
+  invertebrado: {
+    inseto: {
+      hematofago: "pulga",
+      herbivoro: "lagarta"
+    },
+    anelideo: {
+      hematofago: "sanguessuga",
+      onivoro: "minhoca"
+    }
+  }
 }
 
-if (typeof cities[lines[0]] === 'undefined') {
-  console.log("DDD nao cadastrado");
-} else {
-  console.log(cities[lines[0]]);
-}
+console.log(animal[lines[0]][lines[1]][lines[2]])
 
 
 
